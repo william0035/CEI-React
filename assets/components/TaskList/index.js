@@ -32,12 +32,11 @@ export default function TaskList({data , handleDelete, edit }) {
                         <Text style={css.modalTitle}>Editar</Text>
                     </View>
                     <View>
-                        <TextInput
+                        <Text style={css.inputCad}>
 
-                            style={css.inputCad}
-                            value={data.task}
-                            onChangeText={(item) => setInput2(item)}
-                        />
+                            
+                            {data.task}
+                        </Text>
                         <TextInput
 
                             keyboardType = 'numeric'
