@@ -71,6 +71,34 @@ export default function Itens({navigation})
                 renderItem={({item}) => <TaskList data={item} handleDelete={handleDelete} edit={edit} />}
             />
             
+            <Modal animationType="slide" transparent={false} visible={open}>
+                <SafeAreaView style={css.modal}>
+                    <View style={css.modalHeader}>
+                        <TouchableOpacity onPress={()=> setOpen(false)}>
+                            <Icon style={{marginLeft:5,marginRight:5}} name="arrow-left" size={35} color='#fff'/>
+                        </TouchableOpacity>
+                        <Text style={css.modalTitle}>Novo Item</Text>
+                    </View>
+                    <View>
+                        <TextInput
+                            placeholder="Insira o nome do Item:"
+                            style={css.inputCad}
+                            value={input}
+                            onChangeText={(item) => setInput(item)}
+                        />
+                        <TextInput
+                            placeholder="Quantidade:"
+                            keyboardType = 'numeric'
+                            style={css.inputCad}
+                            value={inputQnt}
+                            onChangeText={(item) => setInputQNT(item)}
+                        />
+                        <TouchableOpacity style={css.inputSubmit} onPress={cadastrar}>
+                            <Text>CADASTRAR</Text>
+                        </TouchableOpacity>
+                    </View>
+                </SafeAreaView>
+            </Modal>
 
            
           
