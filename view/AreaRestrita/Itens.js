@@ -71,6 +71,7 @@ export default function Itens({navigation})
                 renderItem={({item}) => <TaskList data={item} handleDelete={handleDelete} edit={edit} />}
             />
             
+
             <Modal animationType="slide" transparent={false} visible={open}>
                 <SafeAreaView style={css.modal}>
                     <View style={css.modalHeader}>
@@ -100,7 +101,6 @@ export default function Itens({navigation})
                 </SafeAreaView>
             </Modal>
 
-           
           
 
             <TouchableOpacity style={css.buttonPlus} onPress={() => setOpen(true)}>

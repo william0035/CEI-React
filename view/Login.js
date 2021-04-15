@@ -6,7 +6,7 @@ import {css} from '../assets/css/style';
 
 export default function Login({navigation})
 {
-     const [display, setDisplay]=useState('none');
+    const [display, setDisplay]=useState('none');
     const [nome, setNome]=useState('null');
     const [senha, setSenha]=useState('null');
     const [login, setLogin]=useState('false');
