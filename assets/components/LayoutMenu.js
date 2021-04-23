@@ -20,9 +20,6 @@ return(
 
     <Text style={css.area__title}>{props.title}</Text>
 
-    <TouchableOpacity style={css.button__logout} onPress={()=>logout()}>
-        <Icon name="sign-out" size={20} color='#fff'/>
-    </TouchableOpacity>
 </View>
 );
 }

@@ -1,5 +1,4 @@
 import AsyncStorage from '@react-native-community/async-storage';
-import { setStatusBarNetworkActivityIndicatorVisible } from 'expo-status-bar';
 import React, {useState, useEffect} from 'react';
 import {Text, View,Image, KeyboardAvoidingView, Platform, TextInput, TouchableOpacity} from 'react-native';
 import {css} from '../assets/css/style';

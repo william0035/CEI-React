@@ -23,7 +23,7 @@ export default function App() {
           headerTitleStyle:{fontWeight:'bold'}
           }}
         />
-        <Stack.Screen name="Login" component={Login} 
+        <Stack.Screen name="Entrar" component={Menu} 
           options={{headerShown:false}}
         />
        <Stack.Screen name="Menu" options={{headerShown:false}} component={Menu} />

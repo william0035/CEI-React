@@ -6,8 +6,8 @@ export default function Home({navigation})
 {
     return(
         <View style={css.containerHome}>
-            <TouchableOpacity style={css.buttonDefault} onPress={() => navigation.navigate('Login')} >
-                <Text style={css.buttonDefaultText} >LOGIN</Text>
+            <TouchableOpacity style={css.buttonDefault} onPress={() => navigation.navigate('Menu')} >
+                <Text style={css.buttonDefaultText} >ENTRAR</Text>
             </TouchableOpacity>
         </View>
     );

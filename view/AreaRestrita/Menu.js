@@ -27,7 +27,7 @@ export default function Menu()
         inactiveColor='#fff'
         barStyle={css.area__tab}
         >
-            <Tab.Screen name="Profile" 
+            <Tab.Screen name="Inicio" 
             component={Profile} 
             options={{
                 tabBarIcon:()=>(
